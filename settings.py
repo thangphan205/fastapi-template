@@ -1,8 +1,7 @@
-from pydantic import BaseSettings
 import secrets
 
 
-class DevSettings(BaseSettings):
+class DevSettings():
     API_V1_STR: str = "/api"
 
     SECRET_KEY: str = secrets.token_urlsafe(32)
